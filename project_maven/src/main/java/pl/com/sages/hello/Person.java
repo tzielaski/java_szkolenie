@@ -54,5 +54,14 @@ class Person {
         }
     }
 
+    @Override
+    public String toString(){
+         return ("First name: " + firstName + "\n"
+         + "Last name: " + LastName + "\n"
+         + "Age: " + age + "\n"
+         + "Gender: " + gender + "\n"
+         + "Adult: " + isAdult() + "\n"
+         + "Retired: " + isRetired());
+    }
 
 }

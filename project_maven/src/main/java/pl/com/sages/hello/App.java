@@ -8,21 +8,46 @@ public class App
 {
     public static void main( String[] args )
     {
-        Person person = new Person();
-        person.setFirstName("Letitia");
-        person.setLastName("Henderson");
-        person.setGender("F");
-        person.age=18;
+        Person [] personTab = new Person[3];
 
-        Person person2 = new Person();
-        person2.setFirstName("Harold");
-        person2.setLastName("Crivens");
-        person2.setGender("M");
-        person2.age=65;
+        personTab[0] = new Person();
+        personTab[0].setFirstName("Letitia");
+        personTab[0].setLastName("Henderson");
+        personTab[0].setGender("F");
+        personTab[0].age=18;
 
-        printData(person);
-        System.out.println("*");
-        printData(person2);
+        personTab[1] = new Person();
+        personTab[1].setFirstName("Harold");
+        personTab[1].setLastName("Crivens");
+        personTab[1].setGender("M");
+        personTab[1].age=65;
+
+        personTab[2] = new Person();
+        personTab[2].setFirstName("Mike");
+        personTab[2].setLastName("Adams");
+        personTab[2].setGender("M");
+        personTab[2].age=34;
+
+        /*for (Person p: personTab){
+            printData(p);
+            System.out.println("*");
+        }*/
+        
+        /*for(int i = 0; i<personTab.length;i++){
+            printData(personTab[i]);
+            System.out.println("*");
+        }*/
+
+        int cnt=0;
+        /*while(cnt <3){
+            printData(personTab[cnt]);
+            System.out.println("*");
+            cnt++;
+        }*/
+
+        do {printData(personTab[cnt]);
+            System.out.println("*");
+            cnt++;} while (cnt <3);
 
         System.out.println("----------------------------");
         System.out.println("People count: " + Person.count);
@@ -30,11 +55,13 @@ public class App
     }
 
     private static void printData(Person person){
-    System.out.println("First Name: " + person.getFirstName());
+    /*System.out.println("First Name: " + person.getFirstName());
     System.out.println("Last Name: " + person.getLastName());
     System.out.println("Age: " + String.valueOf(person.age));
     System.out.println("Gender: " + person.getGender());
     System.out.println("Adult: " + person.isAdult());
-    System.out.println("Retired: " + person.isRetired());
+    System.out.println("Retired: " + person.isRetired());*/
+
+    System.out.println(person.toString());
 }
 }
