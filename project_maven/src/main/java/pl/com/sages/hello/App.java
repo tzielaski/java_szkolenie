@@ -38,7 +38,7 @@ public class App
             System.out.println("*");
         }*/
 
-        int cnt=0;
+//        int cnt=0;
         /*while(cnt <3){
             printData(personTab[cnt]);
             System.out.println("*");
@@ -54,7 +54,6 @@ public class App
 
 
         char[][] painting = new char[8][8];
-//        fill the table
         for(int i=0; i<8;i++){
             if(i==0){
                 for(int j=0; j<8;j++){
