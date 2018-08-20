@@ -1,6 +1,6 @@
 package pl.com.sages.hello;
 
-class ChristmassTree {
+class ChristmasTree {
     char[][] getPainting() {
         return painting;
     }
@@ -8,7 +8,7 @@ class ChristmassTree {
     private char[][] painting;
 
 
-    ChristmassTree() {
+    ChristmasTree() {
         painting = new char[8][8];
         for (int i = 0; i < 8; i++) {
             if (i == 0) {

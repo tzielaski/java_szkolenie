@@ -53,8 +53,8 @@ public class App
         System.out.println("People count: " + Person.count);*/
 
 
-        ChristmassTree christmassTree = new ChristmassTree();
-        char[][] treePainting = christmassTree.getPainting();
+        ChristmasTree christmasTree = new ChristmasTree();
+        char[][] treePainting = christmasTree.getPainting();
         for (char [] row: treePainting){
             for(char square: row){
                 System.out.print(square);
