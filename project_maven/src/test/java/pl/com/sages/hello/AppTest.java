@@ -1,7 +1,5 @@
 package pl.com.sages.hello;
 
-import static junit.framework.TestCase.fail;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;

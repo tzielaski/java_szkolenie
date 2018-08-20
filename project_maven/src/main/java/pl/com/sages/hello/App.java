@@ -25,7 +25,8 @@ public class App
         printData(person2);
 
         System.out.println("----------------------------");
-        System.out.println("Liczba osób: " + Person.count);
+        System.out.println("People count: " + Person.count);
+
     }
 
     private static void printData(Person person){
