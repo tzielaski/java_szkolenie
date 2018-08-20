@@ -2,9 +2,15 @@ package pl.com.sages.hello;
 
 class Person {
 //    Variables and setters
+    static int count=0;
+
     int age;
 
-     void setFirstName(String firstName) {
+    Person() {
+        count++;
+    }
+
+    void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 

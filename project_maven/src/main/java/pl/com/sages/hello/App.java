@@ -14,7 +14,18 @@ public class App
         person.setGender("F");
         person.age=18;
 
+        Person person2 = new Person();
+        person2.setFirstName("Harold");
+        person2.setLastName("Crivens");
+        person2.setGender("M");
+        person2.age=65;
+
         printData(person);
+        System.out.println("*");
+        printData(person2);
+
+        System.out.println("----------------------------");
+        System.out.println("Liczba osób: " + Person.count);
     }
 
     private static void printData(Person person){
