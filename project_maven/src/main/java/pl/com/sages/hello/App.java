@@ -45,12 +45,57 @@ public class App
             cnt++;
         }*/
 
-        do {printData(personTab[cnt]);
+        /*do {printData(personTab[cnt]);
             System.out.println("*");
-            cnt++;} while (cnt <3);
+            cnt++;} while (cnt <3);*/
 
-        System.out.println("----------------------------");
-        System.out.println("People count: " + Person.count);
+        /*System.out.println("----------------------------");
+        System.out.println("People count: " + Person.count);*/
+
+
+        char[][] painting = new char[8][8];
+//        fill the table
+        for(int i=0; i<8;i++){
+            if(i==0){
+                for(int j=0; j<8;j++){
+                    painting[i][j]='*';
+                    System.out.print(painting[i][j]);
+                }
+                System.out.print("\n");
+            } else if (i==7){
+                for(int j=0; j<8;j++){
+                    if(j==3 || j==4){
+                        painting[i][j]='|';
+                    }else {painting[i][j]='*';}
+                    System.out.print(painting[i][j]);
+                }
+                System.out.print("\n");
+            } else if(i%2 == 1){
+                for(int j=0; j<8;j++){
+                    switch(j){
+                        case 3: painting[i][j]='/'; break;
+                        case 4: painting[i][j]='\\'; break;
+                        default: painting[i][j]='*'; break;
+                    }
+                    System.out.print(painting[i][j]);
+                }
+                System.out.print("\n");
+            }else if(i%2 == 0){
+                for(int j=0; j<8;j++){
+                    switch(j){
+                        case 2: painting[i][j]='/'; break;
+                        case 3: painting[i][j]='_'; break;
+                        case 4: painting[i][j]='_'; break;
+                        case 5: painting[i][j]='\\'; break;
+                        default: painting[i][j]='*'; break;
+                    }
+                    System.out.print(painting[i][j]);
+                }
+                System.out.print("\n");
+            }
+        }
+
+
 
     }
 
