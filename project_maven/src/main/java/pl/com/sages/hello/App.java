@@ -1,7 +1,7 @@
 package pl.com.sages.hello;
 
 /**
- * Hello world!
+ * Personal data
  *
  */
 public class App 
