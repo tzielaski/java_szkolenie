@@ -62,6 +62,12 @@ public class App
             System.out.print("\n");
         }
 
+        Book[] books = {new Book("The Beauty and the Beast",256),
+                new Book("Infinity",100),
+                new Book("Infiltration",300)};
+        System.out.println("Sum of pages: " + Book.sumPageCount(books));
+        System.out.println("The longest book: " + Book.getLongestBook(books).toString());
+
 
 
     }
