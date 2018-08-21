@@ -8,7 +8,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Person [] personTab = new Person[3];
+        /*Person [] personTab = new Person[3];
 
         personTab[0] = new Person();
         personTab[0].setFirstName("Letitia");
@@ -26,7 +26,7 @@ public class App
         personTab[2].setFirstName("Mike");
         personTab[2].setLastName("Adams");
         personTab[2].setGender("M");
-        personTab[2].age=34;
+        personTab[2].age=34;*/
 
         /*for (Person p: personTab){
             printData(p);
@@ -53,7 +53,7 @@ public class App
         System.out.println("People count: " + Person.count);*/
 
 
-        ChristmasTree christmasTree = new ChristmasTree();
+        /*ChristmasTree christmasTree = new ChristmasTree();
         char[][] treePainting = christmasTree.getPainting();
         for (char [] row: treePainting){
             for(char square: row){
@@ -66,10 +66,21 @@ public class App
                 new Book("Infinity",100),
                 new Book("Infiltration",300)};
         System.out.println("Sum of pages: " + Book.sumPageCount(books));
-        System.out.println("The longest book: " + Book.getLongestBook(books).toString());
+        System.out.println("The longest book: " + Book.getLongestBook(books).toString());*/
 
+        //Z1
+        for(String arg: args){
+            System.out.println(arg);
+        }
 
+        AsteriskSquare square = new AsteriskSquare(5);
+        System.out.println(square.toString());
 
+        EmptySquare emptySquare = new EmptySquare(5);
+        System.out.println(emptySquare.toString());
+
+        AsteriskNum one = new AsteriskNum(7,'1');
+        System.out.println(one.toString());
     }
 
     private static void printData(Person person){
