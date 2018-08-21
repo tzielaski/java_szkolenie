@@ -36,7 +36,7 @@ class AsteriskNum extends AsteriskSquare {
             }
             break;
             case '2':
-                Double dMiddle=floor(size/2.);
+                Double dMiddle=floor((double) size/2.);
                 int middle = dMiddle.intValue();
                 for(int i=0;i<size;i++){
                 for(int j=0;j<size;j++){
