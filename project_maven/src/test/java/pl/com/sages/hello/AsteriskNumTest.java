@@ -31,4 +31,10 @@ public class AsteriskNumTest {
         AsteriskNum one = new AsteriskNum(5,'2');
         assertEquals(one.toString(),"*****\n    *\n*****\n*    \n*****\n");
     }
+
+    @Test
+    public void shouldReturnFour(){
+        AsteriskNum four = new AsteriskNum(5,'4');
+        assertEquals(four.toString(),"*   *\n*   *\n*****\n    *\n    *\n");
+    }
 }

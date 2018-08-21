@@ -85,6 +85,12 @@ public class App
         AsteriskNum two = new AsteriskNum(5,'2');
         System.out.println(two.toString());
 
+        AsteriskNum three = new AsteriskNum(5,'3');
+        System.out.println(three.toString());
+
+        AsteriskNum four = new AsteriskNum(5,'4');
+        System.out.println(four.toString());
+
         Triangle triangle = new Triangle();
         triangle.draw();
     }
