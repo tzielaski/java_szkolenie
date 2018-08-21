@@ -14,9 +14,12 @@ class AsteriskNum extends AsteriskSquare {
             System.exit(1);
         }
         this.number=number;
+        prepareData(size,number);
+    }
+
+    private void prepareData(int size, char number) {
         Double dMiddle=floor((double) size/2.);
         int middle = dMiddle.intValue();
-
         switch(number){
             case '0': for(int i=0;i<size;i++){
                 for(int j=0;j<size;j++){
@@ -27,7 +30,7 @@ class AsteriskNum extends AsteriskSquare {
                     }
                 }
             }
-            break;
+                break;
             case '1':for(int i=0;i<size;i++){
                 for(int j=0;j<size;j++){
                     if(j == (size - 1)){
@@ -37,20 +40,20 @@ class AsteriskNum extends AsteriskSquare {
                     }
                 }
             }
-            break;
+                break;
             case '2':
                 for(int i=0;i<size;i++){
-                for(int j=0;j<size;j++){
-                    if(i==0 || i == (size - 1) || i==middle){
-                        this.charMatrix[i][j]='*';
-                    }else if ((i<middle && j==size-1)||i>middle && j==0){
-                        this.charMatrix[i][j]='*';
-                    }
-                    else{
-                        this.charMatrix[i][j]=' ';
+                    for(int j=0;j<size;j++){
+                        if(i==0 || i == (size - 1) || i==middle){
+                            this.charMatrix[i][j]='*';
+                        }else if ((i<middle && j==size-1)||i>middle && j==0){
+                            this.charMatrix[i][j]='*';
+                        }
+                        else{
+                            this.charMatrix[i][j]=' ';
+                        }
                     }
                 }
-            }
                 break;
             case '3':
                 for(int i=0;i<size;i++){
