@@ -23,14 +23,14 @@ class Book {
 
     static Book getLongestBook(Book[] books){
         int max=0;
-        int max_i = 0;
-        for(int i=0;i<books.length;i++){
-            if(max<books[i].pageCount){
-                max=books[i].pageCount;
-                max_i=i;
+        Book longestBook=null;
+        for(Book book: books){
+            if(max<book.pageCount){
+                max=book.pageCount;
+                longestBook=book;
             }
         }
-        return books[max_i];
+        return longestBook;
     }
 
     @Override
