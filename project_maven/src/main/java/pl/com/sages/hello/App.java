@@ -96,7 +96,12 @@ public class App {
         LaserPrinter laserPrinter = (LaserPrinter) printerCreator.createPrinter(PRINTER_TYPE.LASER);
 
         inkPrinter.print("Hello");
-        laserPrinter.print("Hello", 3);
+        try {
+            laserPrinter.print("Hello", 15);
+        } catch (OutOfPaperException e) {
+            System.out.println(e.getMessage());
+            laserPrinter.refillPaper();
+        }
     }
 
     private static void printData(Person person) {
