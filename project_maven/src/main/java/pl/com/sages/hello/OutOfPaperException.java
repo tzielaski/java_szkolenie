@@ -1,6 +1,6 @@
 package pl.com.sages.hello;
 
-class OutOfPaperException extends Exception {
+class OutOfPaperException extends RuntimeException {
 
     OutOfPaperException(String msg){
         super("OutOfPaperException: " + msg);

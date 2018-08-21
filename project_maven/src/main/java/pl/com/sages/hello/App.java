@@ -1,5 +1,7 @@
 package pl.com.sages.hello;
 
+import java.util.Scanner;
+
 /**
  * Personal data
  */
@@ -99,8 +101,13 @@ public class App {
         try {
             laserPrinter.print("Hello", 15);
         } catch (OutOfPaperException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e.getMessage() +" and press y.");
             laserPrinter.refillPaper();
+            Scanner in = new Scanner(System.in);
+            String refilled = in.next();
+            if(refilled.equals("y")){
+                laserPrinter.print("Hello", 5);
+            }
         }
     }
 

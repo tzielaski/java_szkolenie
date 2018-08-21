@@ -3,6 +3,7 @@ package pl.com.sages.hello;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 public class AsteriskNumTest {
@@ -35,6 +36,6 @@ public class AsteriskNumTest {
     @Test
     public void shouldReturnFour(){
         AsteriskNum four = new AsteriskNum(5,'4');
-        assertEquals(four.toString(),"*   *\n*   *\n*****\n    *\n    *\n");
+        assertThat(four.toString(),is("*   *\n*   *\n*****\n    *\n    *\n"));
     }
 }
