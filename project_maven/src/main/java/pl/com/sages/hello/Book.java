@@ -1,7 +1,24 @@
 package pl.com.sages.hello;
 
 class Book {
+    public String getTitle() {
+        return title;
+    }
+
+    public int getPageCount() {
+        return pageCount;
+    }
+
     private String title;
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setPageCount(int pageCount) {
+        this.pageCount = pageCount;
+    }
+
     private int pageCount;
 
     Book(String title, int pageCount) {

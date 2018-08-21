@@ -1,5 +1,7 @@
 package pl.com.sages.hello;
 
+import static java.lang.Math.ceil;
+
 class AsteriskNum extends AsteriskSquare {
     private char number;
 
@@ -7,6 +9,10 @@ class AsteriskNum extends AsteriskSquare {
      AsteriskNum(int size, char number) {
 
         super(size);
+        if(size%5 != 0){
+            System.err.println("The size must be dividable by 5.");
+            System.exit(1);
+        }
         this.number=number;
         switch(number){
             case '0': for(int i=0;i<size;i++){
@@ -28,6 +34,23 @@ class AsteriskNum extends AsteriskSquare {
                     }
                 }
             }
+            break;
+            case '2':
+                Double dMiddle=ceil(size/2.0);
+                int middle = dMiddle.intValue();
+                for(int i=0;i<size;i++){
+                for(int j=0;j<size;j++){
+                    if(i==0 || i == (size - 1) || i==middle){
+                        this.charMatrix[i][j]='*';
+                    }else if ((i<middle && j==size-1)||i>middle && j==0){
+                        this.charMatrix[i][j]='*';
+                    }
+                    else{
+                        this.charMatrix[i][j]=' ';
+                    }
+                }
+            }
+                break;
         }
     }
 }

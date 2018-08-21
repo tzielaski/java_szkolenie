@@ -69,9 +69,9 @@ public class App
         System.out.println("The longest book: " + Book.getLongestBook(books).toString());*/
 
         //Z1
-        for(String arg: args){
+        /*for(String arg: args){
             System.out.println(arg);
-        }
+        }*/
 
         AsteriskSquare square = new AsteriskSquare(5);
         System.out.println(square.toString());
@@ -79,18 +79,14 @@ public class App
         EmptySquare emptySquare = new EmptySquare(5);
         System.out.println(emptySquare.toString());
 
-        AsteriskNum one = new AsteriskNum(7,'1');
+        AsteriskNum one = new AsteriskNum(5,'1');
         System.out.println(one.toString());
+
+        AsteriskNum two = new AsteriskNum(5,'2');
+        System.out.println(two.toString());
     }
 
     private static void printData(Person person){
-    /*System.out.println("First Name: " + person.getFirstName());
-    System.out.println("Last Name: " + person.getLastName());
-    System.out.println("Age: " + String.valueOf(person.age));
-    System.out.println("Gender: " + person.getGender());
-    System.out.println("Adult: " + person.isAdult());
-    System.out.println("Retired: " + person.isRetired());*/
-
     System.out.println(person.toString());
 }
 }
