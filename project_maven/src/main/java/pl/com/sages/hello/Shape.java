@@ -1,7 +1,5 @@
 package pl.com.sages.hello;
 
-class Shape {
-    void draw(){
-        System.out.println("This is a drawing.");
-    }
+abstract class Shape {
+    abstract void draw();
 }

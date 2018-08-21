@@ -2,12 +2,9 @@ package pl.com.sages.hello;
 
 /**
  * Personal data
- *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main(String[] args) {
         /*Person [] personTab = new Person[3];
 
         personTab[0] = new Person();
@@ -73,7 +70,7 @@ public class App
             System.out.println(arg);
         }*/
 
-        AsteriskSquare square = new AsteriskSquare(5);
+        /*AsteriskSquare square = new AsteriskSquare(5);
         System.out.println(square.toString());
 
         EmptySquare emptySquare = new EmptySquare(5);
@@ -92,10 +89,17 @@ public class App
         System.out.println(four.toString());
 
         Triangle triangle = new Triangle();
-        triangle.draw();
+        triangle.draw();*/
+
+        PrinterCreator printerCreator = new PrinterCreator();
+        InkPrinter inkPrinter = (InkPrinter) printerCreator.createPrinter(PRINTER_TYPE.INK);
+        LaserPrinter laserPrinter = (LaserPrinter) printerCreator.createPrinter(PRINTER_TYPE.LASER);
+
+        inkPrinter.print("Hello");
+        laserPrinter.print("Hello", 3);
     }
 
-    private static void printData(Person person){
-    System.out.println(person.toString());
-}
+    private static void printData(Person person) {
+        System.out.println(person.toString());
+    }
 }
