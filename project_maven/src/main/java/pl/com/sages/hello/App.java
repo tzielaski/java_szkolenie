@@ -84,6 +84,9 @@ public class App
 
         AsteriskNum two = new AsteriskNum(5,'2');
         System.out.println(two.toString());
+
+        Triangle triangle = new Triangle();
+        triangle.draw();
     }
 
     private static void printData(Person person){
