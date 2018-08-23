@@ -93,12 +93,12 @@ public class App {
         Triangle triangle = new Triangle();
         triangle.draw();*/
 
-        PrinterCreator printerCreator = new PrinterCreator();
+        /*PrinterCreator printerCreator = new PrinterCreator();
         InkPrinter inkPrinter = (InkPrinter) printerCreator.createPrinter(PRINTER_TYPE.INK);
         LaserPrinter laserPrinter = (LaserPrinter) printerCreator.createPrinter(PRINTER_TYPE.LASER);
 
-        inkPrinter.print("Hello");
-        try {
+        inkPrinter.print("Hello");*/
+        /*try {
             laserPrinter.print("Hello", 15);
         } catch (OutOfPaperException e) {
             System.out.println(e.getMessage() +" and press y.");
@@ -108,7 +108,9 @@ public class App {
             if(refilled.equals("y")){
                 laserPrinter.print("Hello", 5);
             }
-        }
+        }*/
+
+        System.out.println("adam".compareTo("Adam"));
     }
 
     private static void printData(Person person) {
