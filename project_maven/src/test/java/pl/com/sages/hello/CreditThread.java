@@ -18,7 +18,7 @@ public class CreditThread extends Thread{
             }
             ThreadTester.creditLimit-=amount;
             synchronized (ThreadTester.class) {
-                System.out.println("" + ++ThreadTester.chargesNumber + ": Charged 1000");
+                System.out.println("" + ++ThreadTester.chargesNumber + ": Charged 1000 " + Thread.currentThread().getName());
             }
         }
     }

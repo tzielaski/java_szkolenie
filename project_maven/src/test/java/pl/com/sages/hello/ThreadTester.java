@@ -10,8 +10,7 @@ public class ThreadTester {
             CountingThread ct = new CountingThread();
             ct.start();
         }*/
-/*
-        for(int i=0; i<10; i++){
+        /*for(int i=0; i<10; i++){
             CreditThread cr = new CreditThread();
             cr.start();
         }*/
