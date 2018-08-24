@@ -8,5 +8,6 @@ public class JerseyConfig extends ResourceConfig {
     public JerseyConfig(){
         register(HelloWorld.class);
         register(EmployeeController.class);
+        register(BookController.class);
     }
 }

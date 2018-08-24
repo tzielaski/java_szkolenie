@@ -1,13 +1,7 @@
 package pl.com.sages.webapp.jpa;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
@@ -38,7 +32,6 @@ public class EmployeeController {
 
 
     @POST
-    @Path("/add")
     @Consumes("application/json")
     public Response addEmployee(Employee employee){
         employeeRepository.save(employee);
