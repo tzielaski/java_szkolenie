@@ -45,4 +45,12 @@ public class Employee {
     public String getLastName() {
         return lastName;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }

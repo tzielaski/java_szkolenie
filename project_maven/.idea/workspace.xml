@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a4b4a01-8b9a-4c5d-8ecb-71ce612b48a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/EmployeeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/JerseyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/JerseyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/EmployeeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jprog-2018" beforeDir="false" afterPath="$PROJECT_DIR$/../jprog-2018" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -256,10 +254,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
