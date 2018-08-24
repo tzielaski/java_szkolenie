@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a4b4a01-8b9a-4c5d-8ecb-71ce612b48a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/JerseyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/HelloWorld.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jprog-2018" beforeDir="false" afterPath="$PROJECT_DIR$/../jprog-2018" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
