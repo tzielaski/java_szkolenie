@@ -1,9 +1,8 @@
 package pl.com.sages.webapp.jpa;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import jdk.nashorn.internal.objects.annotations.Getter;
+
+import javax.persistence.*;
 
 @Entity
 public class Employee {
@@ -24,10 +23,16 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
+
+    public String getName() {
+        return name;
+    }
+
     private String name;
+
     private String lastName;
 
-    long getId() {
+    public long getId() {
         return id;
     }
 
@@ -36,4 +41,8 @@ public class Employee {
         return name + " " + lastName;
     }
 
+
+    public String getLastName() {
+        return lastName;
+    }
 }

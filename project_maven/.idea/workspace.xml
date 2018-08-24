@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a4b4a01-8b9a-4c5d-8ecb-71ce612b48a3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../jpa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/JerseyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa/src/main/java/pl/com/sages/webapp/jpa/JerseyConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jprog-2018" beforeDir="false" afterPath="$PROJECT_DIR$/../jprog-2018" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -466,7 +469,7 @@
       <workItem from="1534755925135" duration="18773000" />
       <workItem from="1534834840926" duration="25759000" />
       <workItem from="1534921280909" duration="12973000" />
-      <workItem from="1535091573889" duration="2354000" />
+      <workItem from="1535091573889" duration="2768000" />
     </task>
     <task id="LOCAL-00001" summary="project_maven 1.0">
       <created>1534756029094</created>
@@ -707,7 +710,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59859000" />
+    <option name="totallyTimeSpent" value="60273000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
